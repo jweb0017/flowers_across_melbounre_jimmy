@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Flowers across Melbourne mockup">
+        <meta name="author" content="Jimmy">
+        
+
+        <title>Flowers Across Melbourne</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+
+        <link href="css/tooplate-moso-interior.css" rel="stylesheet">
+
+        <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"> 
+
+        <script src="https://snapwidget.com/js/snapwidget.js" async="" defer=""></script>
+
+        <link rel="stylesheet" href="https://snapwidget.com/stylesheets/snapwidget-lightbox.css">
+
+        <script src="https://snapwidget.com/js/snapwidget-lightbox.js" async="" defer=""></script>
+        
+
+        
+        <!--WEBPAGE ICONS-->
+
+        <link rel="shortcut icon" type="image/x-icon" href="https://d142mbz7w0wjix.cloudfront.net/assets/favicon-ef9dc9b3c7618d4f51afbf8fa86c0595fd97bf405ca96afd8189b33cf2cb852a.ico%22%3E">
+        <link rel="icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/favicon-16x16-dac55858e2d88c08b13ddbb6c8c777aaa73c78c5e425808df724c8936b0553c0.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/favicon-32x32-83f852dd420865afbd809155eba5c0ee93593c4ac23eba84fa45cec649bc2240.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/favicon-96x96-a131ba55081b40ff64ae342b4f5829f126c64fa26bf619edeb69ee3ca4b27226.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/favicon-194x194-3feb5aab152d601daae92ad404f4af1cfdaba90b29b90075a0d97e0978da4d1e.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/android-chrome-192x192-6b348318f06aeb3769f44ae79006251ff93688cc62251211ee187c62c51bd6e7.png" sizes="192x192">
+        <link rel="apple-touch-icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/apple-touch-icon-1fcbf10bc8986710d60959616f8466cdb12aa188416e104fce15bdd830e4e653.png%22%3E">
+        <link rel="apple-touch-icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/apple-touch-icon-57x57-42f5208898cb8377bf422ee49a881828817b5f53bcaa92e8b5d882e74e3877fc.png" sizes="57x57">
+        <link rel="apple-touch-icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/apple-touch-icon-60x60-ab3be37ed70d78a8e01b7acddcd4014efdeaaefe7a4d1ea65b22ac133db2c944.png" sizes="60x60">
+        <link rel="apple-touch-icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/apple-touch-icon-72x72-3bea1c7bd102e50824d887edc70d4280a9a9abd7102f7e81c2d0a2dd25269f8c.png" sizes="72x72">
+        <link rel="apple-touch-icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/apple-touch-icon-76x76-f39001399f5e83bb968aab77bbdeceedb74e6841d238fd9ba80eb4d43148f8c0.png" sizes="76x76">
+        <link rel="apple-touch-icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/apple-touch-icon-114x114-17855a11d951b943e62861590312569e40a3a561f96bc3b4605100b7f1cc34c2.png" sizes="114x114">
+        <link rel="apple-touch-icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/apple-touch-icon-120x120-bffe97b5e89d0a53a9381167c2d9f587021ece61631b80d8198d7acc67ea6012.png" sizes="120x120">
+        <link rel="apple-touch-icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/apple-touch-icon-144x144-b3d94e481270f74f75a0b8230d15b742519aab2fed72ee8a16b412df43788184.png" sizes="144x144">
+        <link rel="apple-touch-icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/apple-touch-icon-152x152-afc00167e7726e8a08a04bf0184b74525004e5d62f5d6ec498d6cb25abf8797a.png" sizes="152x152">
+        <link rel="apple-touch-icon" type="image/png" href="https://d142mbz7w0wjix.cloudfront.net/assets/apple-touch-icon-180x180-1fcbf10bc8986710d60959616f8466cdb12aa188416e104fce15bdd830e4e653.png" sizes="180x180">
+        <link rel="mask-icon" href="https://d142mbz7w0wjix.cloudfront.net/assets/safari-pinned-tab-90de648c4ba2fad6fbb2c847c6a1a6a57cf53fe413a30f64ec1d32911b4e0f43.svg%22%3E">
+        
+        
+<!--
+
+Tooplate 2133 Moso Interior
+
+https://www.tooplate.com/view/2133-moso-interior
+
+Bootstrap 5 HTML CSS Template
+
+-->
+    </head>
+    
+    <body>
+        
+
+        <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"> Flowers Across Melbourne 
+                    <img src="images/logo.webp"width="33" height="50" alt="shop logo'">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle click-scroll" href="#section_2" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="index.html">All Flowers</a></li>
+
+                                <li><a class="dropdown-item" href="index.html">Shop by Occasion</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Reviews</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                        </li>
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html">Sign Up</a>
+                            <i class="bi bi-cart-fill" href="index.html"></i>
+                            
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="hero-section hero-slide d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 text-center mx-auto">
+                            <div class="hero-section-text">
+                                <small class="section-small-title">Welcome to Flowers Across Melbourne <i class="hero-icon bi-flower2"></i></small>
+
+                                <h1 class="hero-title mt-2 mb-4">Find the perfect flower for any Occasion</h1>
+                                <h5 class="hero-section-text mt-2">Same day delivery for orders before 2pm!</h5>
+
+                                <form class="custom-form hero-form" action="#" method="get" role="form">
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-5 col-md-6 col-12">
+                                            <div class="input-group align-items-center">
+                                                <label for="last-name">Occasion</label>
+
+                                                <select name="occasions" class="form-select form-control" id="occasions" aria-label="Default select example">
+                                                    <option value="Anniversary" selected>Anniversary</option>
+                                                    <option value="Birthday">Birthday</option>
+                                                    <option value="Congratulations">Congratulations</option>
+                                                    <option value="Events">Functions</option>
+                                                    <option value="Funeral">Funeral Flowers</option>
+                                                    <option value="Get_Well">Get Well</option>
+                                                    <option value="Sorry">I'm Sorry</option>
+                                                    <option value="Sports">Sports</option>
+                                                    <option value="Baby">New Baby</option>
+                                                    <option value="Romantic">Romantic</option>
+                                                    <option value="Sympathy">Sympathy</option>
+                                                    <option value="TY">Thank you</option>
+                                                    <option value="Wedding">Wedding</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-5 col-md-6 col-12">
+                                            <div class="input-group align-items-center">
+                                                <label for="last-name">Price</label>
+
+                                                <select name="price-range" class="form-select form-control" id="price-rangs" aria-label="Default select example">
+                                                    <option value="500" selected>$10 to $50</option>
+                                                    <option value="1000">$50 to $100 </option>
+                                                    <option value="3000">$100+</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-6 col-12">
+                                            <button type="submit" class="form-control" href="index.html">Show me the goods! </button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="hero-btn d-flex justify-content-center align-items-center">
+                                    <a class="bi-arrow-down hero-btn-link smoothscroll" href="#section_2"></a>
+                                </div> 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="shop-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <small class="section-small-title">Our Shop</small>
+
+                            <h2 class="mt-2 mb-4"><span class="tooplate-cream">Today's</span> <span class ="main-color">Top Picks</span></h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="shop-thumb">
+                                <div class="shop-image-wrap">
+                                    <a href="index.html">
+                                        <img src="images/shop/thinking-of-you-bunch.webp" class="shop-image img-fluid" alt="thinking of you flower">
+                                    </a>
+
+                                    <div class="shop-icons-wrap">
+                                        <div class="shop-icons d-flex flex-column align-items-center">
+                                            <a href="#" class="shop-icon bi-heart"></a>
+
+                                            <a href="#" class="shop-icon bi-bookmark"></a>
+                                        </div>
+
+                                        <p class="shop-pricing mb-0 mt-3">
+                                            <span class="badge custom-badge">$44.50</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="shop-btn-wrap">
+                                        <a href="index.html" class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Shop Now</a>
+                                    </div>
+                                </div>
+
+                                <div class="shop-body">
+                                    <h4>Little Thinking of You Bunch</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="shop-thumb">
+                                <div class="shop-image-wrap">
+                                    <a href="shop-detail.html">
+                                        <img src="images/shop/orchid orb.webp" class="shop-image img-fluid" alt="orchid orb">
+                                    </a>
+
+                                    <div class="shop-icons-wrap">
+                                        <div class="shop-icons d-flex flex-column align-items-center">
+                                            <a href="#" class="shop-icon bi-heart"></a>
+
+                                            <a href="#" class="shop-icon bi-bookmark"></a>
+                                        </div>
+
+                                        <p class="shop-pricing mb-0 mt-3">
+                                            <span class="badge custom-badge">$42.90</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="shop-btn-wrap">
+                                        <a href="index.html" class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Shop Now</a>
+                                    </div>
+                                </div>
+
+                                <div class="shop-body">
+                                    <h4>Orchid Orb</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="shop-thumb">
+                                <div class="shop-image-wrap">
+                                    <a href="index.html">
+                                        <img src="images/shop/box copy.jpg" class="shop-image img-fluid" alt="box flower">
+                                    </a>
+
+                                    <div class="shop-icons-wrap">
+                                        <div class="shop-icons d-flex flex-column align-items-center">
+                                            <a href="#" class="shop-icon bi-heart"></a>
+
+                                            <a href="#" class="shop-icon bi-bookmark"></a>
+                                        </div>
+
+                                        <p class="shop-pricing mb-0 mt-3">
+                                            <span class="badge custom-badge">$39.90</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="shop-btn-wrap">
+                                        <a href="index.html" class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Shop Now</a>
+                                    </div>
+                                </div>
+
+                                <div class="shop-body">
+                                    <h4>Florist Choice Mini Box</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="shop-thumb">
+                                <div class="shop-image-wrap">
+                                    <a href="index.html">
+                                        <img src="images/shop/weekly copy.jpg" class="shop-image img-fluid" alt="weekly flower bouquets">
+                                    </a>
+
+                                    <div class="shop-icons-wrap">
+                                        <div class="shop-icons d-flex flex-column align-items-center">
+                                            <a href="#" class="shop-icon bi-heart"></a>
+
+                                            <a href="#" class="shop-icon bi-bookmark"></a>
+                                        </div>
+
+                                        <p class="shop-pricing mb-0 mt-3">
+                                            <span class="badge custom-badge">$49</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="shop-btn-wrap">
+                                        <a href="index.html" class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Shop Now</a>
+                                    </div>
+                                </div>
+
+                                <div class="shop-body">
+                                    <h4>Little Subscription Flowers</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="shop-thumb">
+                                <div class="shop-image-wrap">
+                                    <a href="index.html">
+                                        <img src="images/shop/lovelindt copy.jpg" class="shop-image img-fluid" alt="love 'n' lindt bouquet">
+                                    </a>
+
+                                    <div class="shop-icons-wrap">
+                                        <div class="shop-icons d-flex flex-column align-items-center">
+                                            <a href="#" class="shop-icon bi-heart"></a>
+
+                                            <a href="#" class="shop-icon bi-bookmark"></a>
+                                        </div>
+
+                                        <p class="shop-pricing mb-0 mt-3">
+                                            <span class="badge custom-badge">$37.90</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="shop-btn-wrap">
+                                        <a href="index.html" class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Shop Now</a>
+                                    </div>
+                                </div>
+
+                                <div class="shop-body">
+                                    <h4>Love N' Lindt</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <h3 style="padding-top: 50px;">
+                                    Follow us on <a href="https://instagram.com/flowersacrossmelb/">@flowersacrossmelb</a> and join the FAM
+                                </h3>
+
+                                <p>
+                                    To get your daily dose of flower beauty 
+                                </p>
+                                
+                                <iframe title="snapwidget instagram feed" src="https://snapwidget.com/embed/483507" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border: none; overflow: hidden; width: 100%; height: 474px;" id="iFrameResizer0"></iframe>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section section-padding" id="section_3">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-5 col-12">
+                            <small class="section-small-title">Our Story</small>
+
+                            <h2 class="mt-2"><span class="darker-color">Introducing the</span> <span class ="main-color">FAM</span></h2>
+                            <h3 class="mt-2 mb-4"><span class="main-color">F.A.M = Family of Flowers Across Melbourne</h3>
+
+                            <h4 class="text-muted mb-3">Since 2009, we've hand picked flowers for all of Melbourne</h4>
+
+                            <p>Flowers Across Melbourne aims to provide a quick, convenient service delivering flowers throughout Melbourne, including flowers to Melbourne CBD and outer Melbourne Suburbs.</p>
+                            <p>We have quickly established ourselves as Melbourne's premier online florist by catering specifically towards delivering fresh, premium quality flower arrangements and bouquets throughout Melbourne, therefore allowing us to offer a friendly local service whilst ensuring high standards of quality and great prices. Unlike many online florists who use relay services, all of our flowers are delivered direct from us. When you pick up the phone or email us, you will be dealing directly with one of our friendly and experienced florists.</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-5 col-5 mx-lg-auto">
+                            <img src="images/owners.jpeg" class="about-image about-image-small img-fluid" alt="Hughes and NadRob Lambert throwing flowers">
+                        </div>
+
+                        <div class="col-lg-4 col-md-7 col-7">
+                            <img src="images/cuteowners.jpeg" class="about-image img-fluid" alt="Hughes and NadRob Lambert hugging">
+                        </div>
+
+                        <p>Thats us in the pictures! The owners in Hughes and NadRob Lambert.</p>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured-section section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-5 col-12">
+                            <div class="custom-block featured-custom-block">
+                                <h2 class="mt-2 mb-4">Opening Hours</h2>
+
+                                <div class="d-flex">
+                                    <i class="featured-icon bi-clock me-3"></i>
+                                    
+                                    <div>
+                                        <p class="mb-2">
+                                            Mon - Friday ~
+                                            <strong class="d-inline">
+                                                8:00 AM - 5:00 PM
+                                            </strong>
+                                        </p>
+
+                                        <p class="mb-2">
+                                            Saturday ~ Sunday
+                                            <strong class="d-inline">
+                                                10:00 AM - 12:00 PM
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="reviews-section section-padding pb-0" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <small class="section-small-title">Look at all those happy customers!</small>
+
+                            <h2 class="mt-2 mb-4">Reviews</h2>
+
+                            <div class="owl-carousel reviews-carousel">
+                                <div class="reviews-thumb">
+                                    <div class="reviews-body">
+                                        <h4>My daughet loved the flowers for her birthday! Deffo getting more later for myself.</h4>
+                                    </div>
+
+                                    <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
+                                        <img src="images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg" class="avatar-image img-fluid" alt="pretty-blonde-woman-wearing-white-t-shirt">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="text-white mb-0">
+                                                <strong>Sandy</strong>, <small>32</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+                                    <div class="reviews-body">
+                                        <h4>Exactly as pictured! Couldn't be any happier witht the product!.</h4>
+                                    </div>
+
+                                    <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
+                                        <img src="images/avatar/studio-portrait-emotional-happy-funny-smiling-boyfriend-man-with-heavy-beard-stands-with-arms-crossed-dressed-red-t-shirt-isolated-blue.jpg" class="avatar-image img-fluid" alt="smiling man">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="text-white mb-0">
+                                                <strong>Jack</strong>, <small>27</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star"></i>
+                                                <i class="bi-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+                                    <div class="reviews-body">
+                                        <h4>My mum loved the flowers sooo much! Thank you FAM!</h4>
+                                    </div>
+
+                                    <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
+                                        <img src="images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" class="avatar-image img-fluid" alt="young woman">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="text-white mb-0">
+                                                <strong>Helen</strong>, <small>43</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+                                    <div class="reviews-body">
+                                        <h4>The wife was suprised with the quality. Thanks for saving my marriage.</h4>
+                                    </div>
+
+                                    <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
+                                        <img src="images/avatar/portrait-young-redhead-bearded-male-wears-white-t-shirt-keeps-his-eyes-closed-smiling-feels-happy-yellow.jpg" class="avatar-image img-fluid" alt="redhead man">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="text-white mb-0">
+                                                <strong>Bill</strong>, <small>23</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star"></i>
+                                                <i class="bi-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+                                    <div class="reviews-body">
+                                        <h4>My order came so fast! Smelt amazing too!</h4>
+                                    </div>
+
+                                    <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
+                                        <img src="images/avatar/portrait-young-beautiful-woman-gesticulating.jpg" class="avatar-image img-fluid" alt="young woman potrait">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="text-white mb-0">
+                                                <strong>Susan</strong>, <small>57</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-12">
+                                <h5 class="d-flex justify-content-center align-items-center mt-lg-5">Write some reviews on <a href="#" class="custom-btn btn ms-3"><i class="bi-facebook me-2"></i>facebook</a></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="contact-section" id="section_5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8C4F6B" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,149.3C560,139,640,149,720,176C800,203,880,245,960,250.7C1040,256,1120,224,1200,229.3C1280,235,1360,277,1400,298.7L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <small class="section-small-title">Ask anything.</small>
+
+                            <h2 class="mb-4">Say Hello</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <form class="custom-form contact-form" action="#" method="post" role="form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="input-group align-items-center">
+                                            <label for="first-name" >First Name</label>
+
+                                            <input type="text" name="first-name" id="first-name" class="form-control" placeholder="Mr" required autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="input-group align-items-center">
+                                            <label for="last-name">Last Name</label>
+
+                                            <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Flowers" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="input-group align-items-center">
+                                    <label for="email">Email Address</label>
+
+                                     <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="flowerman@gmail.com" required autocomplete="off">
+                                </div>
+
+                                <div class="input-group textarea-group">
+                                    <label for="message">Message</label>
+
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="What can we help you?"></textarea>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <button type="submit" class="form-control">Send</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                            <div class="custom-block">
+
+                                <h3 class="text-white mb-2">Store</h3>
+
+                                <p class="text-white mb-2">
+                                    <i class="contact-icon bi-geo-alt me-1"></i>
+
+                                    45b Quinn St, Preston VIC 3072
+                                </p>
+
+                                <h3 class="text-white mt-3 mb-2">Contact Info</h3>
+
+                                <div class="d-flex flex-wrap">
+                                    <p class="text-white mb-2 me-4">
+                                        <i class="contact-icon bi-telephone me-1"></i>
+
+                                        <a href="index.html" class="text-white">
+                                            (03) 9999 7997
+                                        </a>
+                                    </p>
+
+                                    <p class="text-white">
+                                        <i class="contact-icon bi-envelope me-1"></i>
+
+                                        <a href="index.html" class= "text-white">
+                                            contact@flowersacrossmelbourne.com.au
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <iframe class="google-map mt-2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3154.9458447471934!2d145.0297432!3d-37.7444147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad64540a0c568f3%3A0x44dc6871fe6de19b!2sFlowers%20Across%20Melbourne!5e0!3m2!1sen!2sau!4v1684837768884!5m2!1sen!2sau" " width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F2778D" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,149.3C560,139,640,149,720,176C800,203,880,245,960,250.7C1040,256,1120,224,1200,229.3C1280,235,1360,277,1400,298.7L1440,320L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>            
+        </main>
+
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-5 col-12 mb-3">
+                        <h3><a href="index.html" class="custom-link mb-1">Flowers Across Melbourne</a></h3>
+
+                        <p class="text-white">Established in 2009, Flowers Across Melbourne have a reputation amongst the very best florists in Melbourne, specialising in quick delivery of fresh, made-to-order flowers throughout all of Melbourne.</p>
+                        
+                        <p class="text-white"><a href="index.html" target="_parent">Read more about our story</a></p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-12 ms-lg-auto mb-3">
+                        <h3 class="text-white mb-3">Store</h3>
+
+                        <p class="text-white mt-2">
+                            <i class="bi-geo-alt"></i>
+                            Melbourne, Australia
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 ms-lg-auto mb-3">
+                        <h3 class="text-white mb-3">Quick Links</h3>
+
+                        <p class="text-white"><a href="index.html" target="_parent">Home</a></p>
+                        <p class="text-white"><a href="index.html" target="_parent">FAQ</a></p>
+                        <p class="text-white"><a href="index.html" target="_parent">Create-A-Bouquet</a></p>
+                        <p class="text-white"><a href="index.html" target="_parent">Daily Flowers</a></p>
+                        <p class="text-white"><a href="index.html" target="_parent">Flower Delivery</a></p>
+                        <p class="text-white"><a href="index.html" target="_parent">Flower Subscriptions</a></p>
+                        <p class="text-white"><a href="index.html" target="_parent">Pet Friendly FlowersAQ</a></p>
+                        <p class="text-white"><a href="index.html" target="_parent">Track Your Order</a></p>
+
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 mb-3">
+                        <h3 class="text-white mb-3">Contact Info</h3>
+
+                            <p class="text-white mb-1">
+                                <i class="bi-telephone me-1"></i>
+
+                                <a href="index.html" class="text-white">
+                                    (03) 9999 7997
+                                </a>
+                            </p>
+
+                            <h6 class="text-white">
+
+                                <a href="index.html" class="text-white">
+                                    contact@flowersacrossmelbourne.com.au
+                                </a>
+                            </h6>
+                    </div>
+
+                    <a class="navbar-brand" href="index.html"> Flowers Across Melbourne 
+                        <img src="images/full_Logo.webp" alt="shop logo">
+                    </a>
+
+                    <div class="col-lg-6 col-md-7 copyright-text-wrap col-12 d-flex flex-wrap align-items-center mt-4 ms-auto">
+                        <p class="copyright-text mb-0 me-4">© Copyright Flowers Across Melbourne 2009 - 2023</p>
+
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link social-icon-twitter bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link social-icon-facebook bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link social-icon-instagram bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link social-icon-pinterest bi-pinterest"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link social-icon-whatsapp bi-whatsapp"></a>
+                            </li>
+                        </ul>
+
+                        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="jquery-3.6.4.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <script src="script.js"></script> 
+        <script>// Get the button:
+            let mybutton = document.getElementById("myBtn");
+                        
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0; // For Safari
+              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }</script>
+        
+
+    </body>
+</html>
